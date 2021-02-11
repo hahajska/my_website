@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css?family=Belleza");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&display=swap");
+html,
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+body {
+  height: 100vh;
+  background: black;
+  font-family: "Roboto Mono", monospace;
+  overflow-x: hidden;
+  /* font-family: "Monument Extended"; */
+}
+
+.ball {
+  width: 25px;
+  height: 25px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: white;
+  border-radius: 50%;
+  z-index: 100;
+}
+
+.menu-box {
+  position: relative;
+  height: 5vh;
+}
+
+.menu-box ul {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu-box ul li {
+  padding: 1rem 2rem;
+}
+
+.menu-box ul li a {
+  font-size: 14px;
+  color: white;
+}
+
+.dl {
+  height: 47.5vh;
+}
+
+.btn {
+  margin-top: 1.25rem;
+  background: white;
+  border-radius: 25px;
+  padding: 0.2rem 1.75rem 0.25rem 1.75rem;
+  font-size: 15px;
+  color: black;
+  font-weight: 700;
+  font-style: bold;
+  --animate-duration: 1.5s;
+  letter-spacing: 1px;
+}
+
+.btn:hover {
+  background: #dddddd;
+  color: black;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.firstLeft .text-box {
+  letter-spacing: -1px;
+  color: white;
+  font-weight: 500;
+  padding-left: 3rem;
+  padding-top: 2rem;
+  /*   text-transform: uppercase;
+ */
+}
+
+.firstLeft h1 {
+  font-size: 27px;
+}
+
+.firstLeft h2 {
+  font-size: 20px;
+}
+
+.firstLeft p {
+  font-size: 13px;
+  margin-top: 2rem;
+  word-spacing: -3px;
+  width: 75%;
+}
+
+span {
+  font-style: italic;
+}
+
+.firstImage {
+  height: 350px;
+  width: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.secondImage {
+  height: 300px;
+  width: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  right: -5rem;
+  top: -7.5rem;
+  z-index: 1;
+}
+
+.thirdImage {
+  height: 450px;
+  width: 700px;
+  position: absolute;
+  left: 4rem;
+  bottom: 4rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.firstRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.box-text2 {
+  letter-spacing: -1px;
+  color: white;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /*   text-transform: uppercase;
+*/
+}
+
+.box-text2 h1 {
+  font-size: 20px;
+}
+
+.box-text2 h2 {
+  font-size: 20px;
+}
+
+.box-text2 p {
+  font-size: 13px;
+  margin-top: 2rem;
+  word-spacing: -3px;
+  width: 75%;
+}
+
+.box-text2 ul {
+  margin-top: 2.5rem;
+}
+
+.box-text2 li {
+  line-height: 2rem;
+}
+
+.text-box3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.box-projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.box-projects ul {
+  list-style: none;
+  /*     padding: 0;
+    margin: 0;
+ */
+}
+
+.box-projects ul li {
+  display: block;
+  position: relative;
+  font-size: 10px;
+  text-align: center;
+  margin-bottom: 30px;
+  z-index: 30;
+  padding: 5px;
+}
+
+.box-projects ul .firstItem {
+  padding-top: 3rem;
+}
+
+.box-projects ul a {
+  text-decoration: none !important;
+  position: relative;
+  font-size: 15px;
+  text-align: center;
+  color: white;
+}
+
+.box-projects ul a:hover {
+  color: white;
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
+}
+
+.hover_img {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  top: 50%;
+  left: 50%;
+  z-index: 20;
+  opacity: 0;
+  pointer-events: none;
+}
+
+h1 {
+  font-size: 28px;
+  padding-top: 2rem;
+  color: white;
+  letter-spacing: -1px;
+  color: white;
+  font-weight: 500;
+}
+
+.platno {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: black;
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.platno h1 {
+  color: white;
+  z-index: 999;
+}
+
+.thirdImage-md {
+  display: none;
+}
+
+.spoluprace_col {
+  height: 5vh;
+  display: none;
+}
+
+.spoluprace_col_obrazek {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: none;
+}
+
+.obdelnik_left {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  /*   transform: translate(-50%, 0);
+   */
+  height: 900px;
+  width: 500px;
+  border-left: 1px solid white;
+  z-index: -100;
+  display: none;
+}
+
+.obdelnik_left_bottom {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  /*   transform: translate(-50%, 0);
+   */
+  height: 900px;
+  width: 500px;
+  border-bottom: 1px solid white;
+  z-index: -100;
+  display: none;
+}
+
+.obdelnik_right {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  /*   transform: translate(-50%, 0);
+   */
+  height: 850px;
+  width: 350px;
+  border-top: 1px solid white;
+  z-index: -100;
+  display: none;
+}
+
+.obdelnik_right_up {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  /*   transform: translate(-50%, 0);
+   */
+  height: 850px;
+  width: 350px;
+  border-right: 1px solid white;
+  z-index: -100;
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */
